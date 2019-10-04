@@ -18,16 +18,15 @@ var_dump($array);
 foreach($array as $row) //Extract the Array Values by using Foreach Loop
 {
     $sql = "INSERT INTO Produittt(color , category , productName , price , description ,tag , productMaterial , createdAt, ImageUrl)
-		   VALUES ('".$row["color"]."', '".$row["category"]."', '".$row["productName"]."','".$row["price"]."','".$row["description"]."','".$row["tag"]."','".$row["productMaterial"]."','".$row["createdAt"]."','".$row["productMaterial"]."','".$row["imageUrl"]."'); "
+		   VALUES ('".$row["color"]."', '".$row["category"]."', '".$row["productName"]."','".$row["price"]."','".$row["description"]."','".$row["tag"]."','".$row["productMaterial"]."','".$row["createdAt"]."','".$row["productMaterial"]."','".$row["imageUrl"]."');";
 
+ //foreach()
+   /* $sql1 = "INSERT INTO Review(product_id, rating, content)
+VALUES ('".$row[""]."', '".$row["rating"]."', '".$row["content"] ."');";
+*/
 
-    ;
-
-
-
-
-		   mysqli_query($connect, $sql);
-    };
+    mysqli_query($connect, $sql);
+    }
 		  
 		  
      
